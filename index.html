@@ -192,6 +192,19 @@
 
   box-shadow: 0 6px 18px rgba(0,0,0,.25);
 }
+/* Program times inside table cells */
+.times{
+  margin:0;
+  padding-left: 16px;
+}
+.times li{
+  margin: 4px 0;
+}
+.time{
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin-right: 8px;
+}
 
 
   </style>
@@ -268,12 +281,15 @@
     <td> </td>
     <td class="muted">Arrival</td>
   </tr>
-  <tr>
-    <td><strong>Mon 16</strong></td>
-    <td>Session A</td>
-    <td>Free time</td>
-    <td>Discussion</td>
-  </tr>
+  <td>
+  <strong>Session A</strong>
+  <ul class="times">
+    <li><span class="time">09:00–09:50</span> Talk 1 — Name</li>
+    <li><span class="time">10:00–10:40</span> Talk 2 — Name</li>
+    <li><span class="time">11:00–11:50</span> Talk 3 — Name</li>
+  </ul>
+</td>
+
   <tr>
     <td><strong>Tue 17</strong></td>
     <td>Session B</td>
