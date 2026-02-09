@@ -205,6 +205,30 @@
   font-variant-numeric: tabular-nums;
   margin-right: 8px;
 }
+/* Evening discussions (question bank) */
+.discussion-box{
+  margin-top: 24px;
+  padding: 16px 18px;
+  border: 1px dashed rgba(255,255,255,.18);
+  border-radius: 16px;
+  background: rgba(0,0,0,.08);
+}
+
+.discussion-box h3{ margin-top: 0; }
+
+.discussion-slots{
+  margin: 10px 0 10px 18px;
+}
+
+.discussion-slots li{ margin: 6px 0; }
+
+.question-bank{
+  margin: 10px 0 0 18px;
+}
+
+.question-bank li{ margin: 8px 0; }
+
+.question-bank em{ color: var(--muted); font-style: normal; }
 
 
   </style>
@@ -370,6 +394,51 @@
 </tbody>
 
           </table>
+
+<div class="discussion-box">
+  <h3>Evening discussions</h3>
+
+  <p class="muted">
+    Evenings are devoted to open discussions organized around questions proposed during the workshop.
+    Themes and groups will be announced on site.
+  </p>
+
+  <ul class="discussion-slots">
+    <li><strong>Monday</strong> — Flash presentations (≈3 min)</li>
+    <li><strong>Tuesday</strong> — Discussion session A</li>
+    <li><strong>Wednesday</strong> — Discussion session B</li>
+    <li><strong>Thursday</strong> — Discussion session C</li>
+    <li><strong>Friday</strong> — Discussion session D</li>
+  </ul>
+
+  <p class="muted small" style="margin-top:12px; margin-bottom:6px;">
+    Current pool of discussion questions (may evolve):
+  </p>
+
+  <ul class="question-bank">
+    <li><strong>Generalization in self-supervised learning:</strong> how should we properly define and measure it?
+      <em>(test loss can be flawed; “absence of memorization” can be flawed; what else?)</em></li>
+
+    <li><strong>Models for self-supervised learning:</strong> what are good theoretical models to analyze it?
+      <em>(random language models? spiked cumulant models? what else?)</em></li>
+
+    <li><strong>Population loss vs SGD speed:</strong> can we formulate a general theorem linking population loss to the speed of SGD?
+      <em>(aiming for an overarching statement beyond specific proofs)</em></li>
+
+    <li><strong>Memorization taxonomy:</strong> which kinds of memorization matter, and what do we want to know?
+      <em>(harmful: diffusion models/privacy; beneficial: Hopfield-like, rules vs facts)</em></li>
+
+    <li><strong>Sequence models beyond transformers:</strong> what alternatives are promising, and why do we tokenize data in the first place?</li>
+
+    <li><strong>Neural scaling laws for (two-layer) nets:</strong> can we build a model that includes the number of parameters?
+      and a counterpart for multi-layer learning?</li>
+
+    <li><strong>Fine-tuning, continual learning, in-context learning:</strong> is fine-tuning crucial long-term, or will continual updates make it obsolete?
+      is in-context learning overrated or fundamental?</li>
+  </ul>
+</div>
+
+          
         </section>
 
         <section id="logistics">
